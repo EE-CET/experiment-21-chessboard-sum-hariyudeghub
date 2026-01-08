@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1",
+      "setup": "javac src/ChessboardSum.java",
+      "run": "java -cp src ChessboardSum",
+      "input": "3\n1 2 3\n4 5 6\n7 8 9",
+      "output": "25\n20",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "2x2 Uniform",
+      "setup": "javac src/ChessboardSum.java",
+      "run": "java -cp src ChessboardSum",
+      "input": "2\n5 5\n5 5",
+      "output": "10\n10",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Single Element (1x1)",
+      "setup": "javac src/ChessboardSum.java",
+      "run": "java -cp src ChessboardSum",
+      "input": "1\n99",
+      "output": "99\n0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Zero Matrix",
+      "setup": "javac src/ChessboardSum.java",
+      "run": "java -cp src ChessboardSum",
+      "input": "3\n0 0 0\n0 0 0\n0 0 0",
+      "output": "0\n0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
